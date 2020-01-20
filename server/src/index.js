@@ -1,9 +1,9 @@
 const express = require('express')
 require('./db/mongoose')
 const userRouter = require('./routers/user')
-const taskRouter = require('./routers/task')
-const cropRouter = require('./routers/crop')
-const cartRouter = require('./routers/cart')
+const taskRouter = require('./routers/fertilizer')
+const cropRouter = require('./routers/market')
+const seedRouter = require('./routers/seeds')
 const app = express()
 const port = process.env.PORT
 
@@ -15,7 +15,7 @@ app.use(express.json())
 app.use(userRouter)
 app.use(taskRouter)
 app.use(cropRouter)
-app.use(cartRouter)
+app.use(seedRouter)
 
 
 app.listen(port , ()=>{

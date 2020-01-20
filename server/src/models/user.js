@@ -59,6 +59,12 @@ const userSchema = new mongoose.Schema({
     crops: {
         type: Array
     },
+    cart: {
+        type: Array
+    },
+    transactions: {
+        type: Array
+    },
     email: {
         type: String,
         unique: true,
