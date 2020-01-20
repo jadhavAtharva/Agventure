@@ -21,13 +21,3 @@ app.use(cartRouter)
 app.listen(port , ()=>{
     console.log('Server is up on port ' + port)
 })
-
-// {
-// 	"s": 0,
-// 	"p": 7,
-// 	"t": 26,
-// 	"h": 45,
-// 	"r": 58,
-// 	"y": 1.85,
-// 	"w": 60
-// }
